@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  background: #fef9ff;
+  font-family: arial, sans-serif; }
+
+.contenedor-padre {
+  width: 1024px;
+  margin: 0px auto;
+  background: #fff;
+  padding-top: 10px; }
+
+.encabezado {
+  width: 100%;
+  font-family: arial;
+  background: #fff;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #b6cde5; }
+  .encabezado ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10; }
+    .encabezado ul li {
+      display: inline-block;
+      font-size: 17px; }
+      .encabezado ul li .icono-encabezado {
+        border-radius: 40px;
+        border: none; }
+      .encabezado ul li a {
+        text-decoration: none;
+        display: inline-block;
+        color: #3c6a9f;
+        cursor: pointer;
+        padding: 10px 15px;
+        border-bottom: solid 4px transparent; }
+        .encabezado ul li a:hover {
+          color: #0a2046;
+          border-bottom: solid 4px #0a2046; }
+    .encabezado ul .buscador {
+      position: relative; }
+      .encabezado ul .buscador input[type="text"] {
+        width: 220px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        background: #fff;
+        border: none;
+        border: 2px solid #b6cde5;
+        font-size: 14px; }
+    .encabezado ul .boton-buscador {
+      border: none;
+      font-size: 16px;
+      color: #305178;
+      background: #fff;
+      cursor: pointer;
+      position: absolute;
+      margin: auto 0;
+      right: 10px;
+      top: 7px;
+      padding-left: 8px;
+      border-left: 2px solid #b6cde5; }
+      .encabezado ul .boton-buscador:active {
+        border-left: 2px solid #150578; }
+
+.icono {
+  width: 100%;
+  padding: 30px;
+  text-align: center; }
+
+.productos {
+  padding: 20px;
+  background: #e8eef4; }
+  .productos .titulo {
+    font-size: 35px;
+    color: #0a2046;
+    margin: 15px 0;
+    text-align: center; }
+  .productos .contenedor-camisas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0; }
+    .productos .contenedor-camisas .camisas {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .productos .contenedor-camisas .camisas .camisas-img {
+        width: 30%;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; }
+        .productos .contenedor-camisas .camisas .camisas-img img {
+          border: 2px solid #b6cde5; }
+        .productos .contenedor-camisas .camisas .camisas-img .nombre-camisa {
+          width: 100%;
+          margin: 5px;
+          padding: 10px 15px;
+          text-align: center;
+          color: #305178; }
+        .productos .contenedor-camisas .camisas .camisas-img .detalle-camisa {
+          text-decoration: none;
+          color: #fff;
+          background: #305178;
+          display: inline-block;
+          padding: 10px 15px;
+          border-radius: 20px;
+          /*detalles ocultos para mostrar en pantalla al darle al boton */ }
+          .productos .contenedor-camisas .camisas .camisas-img .detalle-camisa:hover {
+            background: #0a2046; }
+      .productos .contenedor-camisas .camisas .detalles-ocultos {
+        width: 60%; }
+        .productos .contenedor-camisas .camisas .detalles-ocultos .calificacion {
+          font-size: 25px;
+          color: #150578;
+          padding: 10px 0; }
+        .productos .contenedor-camisas .camisas .detalles-ocultos p .fa {
+          color: #ffb400; }
+        .productos .contenedor-camisas .camisas .detalles-ocultos p .far {
+          color: #ffb400; }
+        .productos .contenedor-camisas .camisas .detalles-ocultos h2 {
+          font-size: 25px;
+          color: #1964fa;
+          padding: 10px 0; }
+        .productos .contenedor-camisas .camisas .detalles-ocultos .mas-detalles {
+          color: #0a2046; }
+          .productos .contenedor-camisas .camisas .detalles-ocultos .mas-detalles li {
+            text-align: justify;
+            font-size: 18px;
+            padding-bottom: 15px; }
+        .productos .contenedor-camisas .camisas .detalles-ocultos a {
+          display: inline-block;
+          text-decoration: none;
+          padding: 10px 15px;
+          color: #fff;
+          background: #1964fa;
+          border-radius: 4px; }
+          .productos .contenedor-camisas .camisas .detalles-ocultos a:active {
+            background: #192bc2; }
+
+.registrar-usuario {
+  width: 100%;
+  background: #fff; }
+  .registrar-usuario .enca-form {
+    width: 100%;
+    text-align: center;
+    color: #0a2046;
+    font-size: 25px;
+    padding: 10px 0;
+    margin-bottom: 15px; }
+    .registrar-usuario .enca-form img {
+      width: 30px; }
+  .registrar-usuario h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #3c6a9f;
+    font-size: 25px;
+    padding: 10px 0;
+    margin-bottom: 10px; }
+  .registrar-usuario .formulario {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 15px; }
+    .registrar-usuario .formulario input[type="text"],
+    .registrar-usuario .formulario input[type="email"],
+    .registrar-usuario .formulario input[type="password"] {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #0a2046;
+      border: none;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: 2px solid #b6cde5; }
+      .registrar-usuario .formulario input[type="text"]:focus,
+      .registrar-usuario .formulario input[type="email"]:focus,
+      .registrar-usuario .formulario input[type="password"]:focus {
+        border: 2px solid #199bfa; }
+    .registrar-usuario .formulario .terminos {
+      display: flex;
+      justify-content: center;
+      font-size: 17px;
+      margin: 10px 0; }
+      .registrar-usuario .formulario .terminos input[type="checkbox"] {
+        margin-right: 10px; }
+      .registrar-usuario .formulario .terminos label {
+        color: #0a2046; }
+    .registrar-usuario .formulario input[type="submit"] {
+      display: inline-block;
+      width: 35%;
+      color: #199bfa;
+      font-size: 17px;
+      margin-top: 10px;
+      background: none;
+      border: none;
+      border: 2px solid #199bfa;
+      padding: 5px 0;
+      margin: 0 auto;
+      border-radius: 5px;
+      cursor: pointer; }
+      .registrar-usuario .formulario input[type="submit"]:hover {
+        color: #fff;
+        background: #199bfa; }
+
+.iniciar-sesion {
+  display: none;
+  width: 100%;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  color: #3c6a9f;
+  font-size: 20px;
+  padding: 10px 0;
+  margin-bottom: 10px; }
+  .iniciar-sesion .formulario {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 15px; }
+    .iniciar-sesion .formulario input[type="email"],
+    .iniciar-sesion .formulario input[type="password"] {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #0a2046;
+      border: none;
+      padding: 15px 15px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #b6cde5; }
+      .iniciar-sesion .formulario input[type="email"]:focus,
+      .iniciar-sesion .formulario input[type="password"]:focus {
+        border-bottom: 2px solid #199bfa; }
+    .iniciar-sesion .formulario input[type="submit"] {
+      display: inline-block;
+      width: 35%;
+      color: #199bfa;
+      font-size: 17px;
+      margin-top: 10px;
+      background: none;
+      border: none;
+      border: 2px solid #199bfa;
+      padding: 5px 0;
+      margin: 0 auto;
+      border-radius: 5px;
+      cursor: pointer; }
+      .iniciar-sesion .formulario input[type="submit"]:hover {
+        color: #fff;
+        background: #199bfa; }
+    .iniciar-sesion .formulario .error {
+      width: 80%;
+      margin: 15px auto;
+      padding: 15px 10px;
+      padding-left: 40px;
+      background: #ce1818;
+      color: #fff;
+      border-radius: 6px;
+      display: none; }
+
+.redes-sociales {
+  width: 100%;
+  padding: 50px;
+  background: #3c6a9f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .redes-sociales .contenedor-redesSociales {
+    width: 33%;
+    text-align: center; }
+    .redes-sociales .contenedor-redesSociales p {
+      width: 100%;
+      font-size: 23px;
+      padding-bottom: 10px;
+      color: #fff;
+      text-align: center; }
+    .redes-sociales .contenedor-redesSociales a {
+      text-decoration: none; }
+      .redes-sociales .contenedor-redesSociales a .fab {
+        font-size: 30px;
+        padding: 10px;
+        color: #fff;
+        padding-bottom: 7px;
+        border-bottom: 2px solid transparent; }
+        .redes-sociales .contenedor-redesSociales a .fab:hover {
+          border-bottom: 2px solid #fff; }
+  .redes-sociales .contacto-contacto {
+    width: 33%; }
+    .redes-sociales .contacto-contacto .titulo-otros {
+      width: 100%;
+      font-size: 23px;
+      padding-bottom: 10px;
+      color: #fff;
+      text-align: center; }
+    .redes-sociales .contacto-contacto p {
+      width: 100%;
+      font-size: 18px;
+      padding-bottom: 10px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none; }
+      .redes-sociales .contacto-contacto p a {
+        width: 100%;
+        font-size: 18px;
+        padding-bottom: 10px;
+        color: #fff;
+        text-align: center;
+        text-decoration: none; }
+        .redes-sociales .contacto-contacto p a:hover {
+          text-decoration: underline; }
+
+footer {
+  width: 100%;
+  padding: 30px;
+  background: #3c6a9f;
+  border-top: 2px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end; }
+  footer p {
+    color: #fff;
+    font-size: 18px; }
+
+/*# sourceMappingURL=estilos.css.map */

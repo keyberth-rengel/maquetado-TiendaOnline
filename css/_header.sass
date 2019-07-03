@@ -1,0 +1,54 @@
+.encabezado
+    width: 100%
+    font-family: arial
+    background: #fff
+    padding: 0 20px
+    padding-bottom: 20px
+    border-bottom: 2px solid #b6cde5
+    ul
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center
+        margin: 0 10
+        li
+            display: inline-block
+            font-size: 17px
+            .icono-encabezado
+                border-radius: 40px
+                border: none
+            a
+                text-decoration: none
+                display: inline-block
+                color: #3c6a9f
+                cursor: pointer
+                padding: 10px 15px
+                border-bottom: solid 4px transparent
+                &:hover
+                    color: #0a2046
+                    border-bottom: solid 4px #0a2046
+        .buscador
+            position: relative
+            input[type="text"]
+                width: 220px
+                padding: 5px 10px
+                border-radius: 20px
+                background: #fff
+                border: none
+                border: 2px solid #b6cde5
+                font-size: 14px
+        .boton-buscador
+            border: none
+            font-size: 16px
+            color: #305178
+            background: #fff
+            cursor: pointer
+            position: absolute
+            margin: auto 0
+            right: 10px
+            top: 7px
+            padding-left: 8px
+            border-left: 2px solid #b6cde5
+            &:active
+                border-left: 2px solid #150578
